@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adobe Tags Test Page</title>
+
+  <!-- 
+    PASTE YOUR ADOBE TAGS EMBED CODE HERE, RIGHT BEFORE </head>
+    You'll get this from: Tags > your property > Environments tab
+    (click on "Development" environment, copy the <script> snippet shown there)
+  -->
+
+</head>
+<body>
+  <h1>Adobe Tags Test Page</h1>
+  <p>If Tags is loaded correctly, check the browser console for <code>_satellite</code> object.</p>
+
+  <button id="test-btn">Click to fire a test event</button>
+
+  <script>
+    document.getElementById('test-btn').addEventListener('click', function () {
+      console.log('Button clicked');
+      // Later: you can trigger a direct call rule here, e.g.
+      // _satellite.track('test-event');
+    });
+  </script>
+</body>
+</html>
